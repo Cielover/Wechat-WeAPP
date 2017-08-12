@@ -1,0 +1,36 @@
+.content{
+    /*设置最外层页面的高度为当前设置高度*/
+    height: 100%;
+    /*流式布局子元素宽度会随父元素宽度的改变而改变*/
+    display: flex;
+    /*项目将垂直显示*/
+    flex-direction: column;
+    /*弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）*/
+    align-items: center;
+    /*此元素的内边距和边框不再会增加它的宽度/*/
+    box-sizing: border-box;
+    /*设置最外层的背景，这里要注意在pages目录下创建一个新的assets文件夹，在该文件夹下面再次创建一个img文件夹，在里面放置一个叫bg.png的图片
+    background-image: url("../assets/img/bg.png");
+    背景图像将在垂直方向和水平方向重复
+    background-repeat: repeat;*/
+}
+/*设置每一个item的样式*/
+.item{
+    width: 90%;
+    line-height: 100rpx;
+    margin-top: 3rpx;
+    margin-bottom: 3rpx;
+    border-radius: 3rpx;
+    color: #fef4e9;
+    border: solid 1px#da7c8c;
+    background: #f78d1d
+}
+.main-bg{
+    height:100%;
+    width:100%;
+    min-height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}

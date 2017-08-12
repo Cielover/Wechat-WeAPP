@@ -1,0 +1,6 @@
+<view class="content">
+<image class="main-bg" src="../assets/img/bg.png"></image>
+<block wx:for="{{logs}}" wx:for-item="log">
+<view class="item">{{log}}</view>
+</block>
+</view>
